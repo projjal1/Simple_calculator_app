@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:background="@color/grey"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/display"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/b_clear"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="buevent"
+                android:text="AC"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/b_sign"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="buevent"
+                android:text="+/-"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/b_modulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="buevent"
+                android:text="%"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/b_div"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="buevent"
+                android:text="/"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/b7"
+                android:onClick="buevent"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:text="7"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button25"
+                android:onClick="buevent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:text="8"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/button26"
+                android:onClick="buevent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:text="9"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/b_mul"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="buevent"
+                android:text="*"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:onClick="buevent"
+                android:id="@+id/b4"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:text="4"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/b5"
+                android:onClick="buevent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:text="5"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/b6"
+                android:onClick="buevent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:text="6"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/b_minus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="buevent"
+                android:text="-"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/b1"
+                android:onClick="buevent"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:text="1"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/b2"
+                android:onClick="buevent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:text="2"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/b3"
+                android:onClick="buevent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:text="3"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/b_plus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="buevent"
+                android:text="+"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/b0"
+                android:layout_width="wrap_content"
+                android:layout_height="250px"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="buevent"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/b_del"
+                android:layout_width="wrap_content"
+                android:layout_height="250px"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="buevent"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:text="Del"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/b_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="250px"
+                android:layout_weight="1"
+                android:background="?attr/colorButtonNormal"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="buevent"
+                android:text="."
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/b_result"
+                android:layout_width="wrap_content"
+                android:layout_height="250px"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="result"
+                android:text="="
+                android:textSize="24sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#D50000" />
+</LinearLayout>
